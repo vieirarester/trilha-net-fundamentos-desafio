@@ -1,38 +1,39 @@
-# DIO - Trilha .NET - Fundamentos
-www.dio.me
+# 🚗 Sistema de Estacionamento 
+## Desafio Bootcamp Avanade - Back-end com .NET e IA
+---
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de fundamentos, da trilha .NET da DIO.
+Este projeto foi desenvolvido como parte do Desafio de Projeto: Fundamentos do .NET da [Digital Innovation One](https://web.dio.me/).
+O objetivo é aplicar os conceitos aprendidos no módulo de Sintaxe Básica com .NET criando um sistema simples para gerenciar veículos em um estacionamento.
 
-## Contexto
-Você foi contratado para construir um sistema para um estacionamento, que será usado para gerenciar os veículos estacionados e realizar suas operações, como por exemplo adicionar um veículo, remover um veículo (e exibir o valor cobrado durante o período) e listar os veículos.
+### 📌 Funcionalidades
 
-## Proposta
-Você precisará construir uma classe chamada "Estacionamento", conforme o diagrama abaixo:
-![Diagrama de classe estacionamento](diagrama_classe_estacionamento.png)
+- Cadastrar veículo → adiciona uma placa à lista de veículos estacionados.
+- Remover veículo → calcula o valor a pagar com base no tempo estacionado e remove o veículo da lista.
+- Listar veículos → mostra todos os veículos atualmente estacionados.
+- Encerrar → finaliza o programa.
 
-A classe contém três variáveis, sendo:
+### 🛠️ Tecnologias utilizadas
 
-**precoInicial**: Tipo decimal. É o preço cobrado para deixar seu veículo estacionado.
+- C#
+- .NET 9.0
 
-**precoPorHora**: Tipo decimal. É o preço por hora que o veículo permanecer estacionado.
+### 🚀 Como executar
 
-**veiculos**: É uma lista de string, representando uma coleção de veículos estacionados. Contém apenas a placa do veículo.
+1. Clonar este repositório:
+```
+git clone https://github.com/seu-usuario/estacionamento-dio.git
+```
 
-A classe contém três métodos, sendo:
+2. Acessar a pasta do projeto:
+```
+cd DesafioFundamentos
+```
 
-**AdicionarVeiculo**: Método responsável por receber uma placa digitada pelo usuário e guardar na variável **veiculos**.
+3. Executar o projeto:
+```
+dotnet run
+```
 
-**RemoverVeiculo**: Método responsável por verificar se um determinado veículo está estacionado, e caso positivo, irá pedir a quantidade de horas que ele permaneceu no estacionamento. Após isso, realiza o seguinte cálculo: **precoInicial** * **precoPorHora**, exibindo para o usuário.
+### 📖 Desafio original
 
-**ListarVeiculos**: Lista todos os veículos presentes atualmente no estacionamento. Caso não haja nenhum, exibir a mensagem "Não há veículos estacionados".
-
-Por último, deverá ser feito um menu interativo com as seguintes ações implementadas:
-1. Cadastrar veículo
-2. Remover veículo
-3. Listar veículos
-4. Encerrar
-
-
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+Este projeto foi proposto no bootcamp Avanade - Back-end com .NET e IA, da [DIO](https://web.dio.me/), que é um bootcamp gratuito, com 84h de conteúdo e 7 desafios práticos como este para agregar conhecimento. Link para acesso: [Avanade - Back-end com .NET e IA](https://www.dio.me/bootcamp/avanade-back-end-com-net-e-ia) (ÚLTIMAS BOLSAS DISPONÍVEIS).
